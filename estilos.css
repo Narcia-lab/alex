@@ -1,0 +1,268 @@
+body{
+      font-family: Arial, sans-serif;
+            background-color: #1d1d1d;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+}
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #a00;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+    
+    }
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column; 
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+    
+}
+
+.colo {
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+
+}
+
+.margin {
+ margin: 20px;
+ padding: 10px;
+}
+
+.galery{
+ display: flex;
+ height: 20rem;
+ gap: 1rem;
+}
+
+.galery > div  { 
+
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+
+}
+
+.galery > div:hover  {
+    flex: 5;
+} 
+
+.colorcito{
+
+color: white;
+
+
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.text {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.profile {
+    flex: 1;
+    max-width: 35%;
+    border: 2px solid #a00;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.profile-header {
+    background-color: #a00;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #900;
+    padding: 10px 0;
+}
+.tabs a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tabs a:hover {
+    text-decoration: underline;
+}
+.section-title {
+    background-color: #a00;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+.table tr:last-child td {
+    border-bottom: none;
+}
+.quote {
+    font-style: italic;
+    color: #ccc;
+    border-left: 4px solid #a00;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+a {
+    color: #a00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .text, .profile {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .navbar a {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header {
+        font-size: 1.2rem;
+    }
+    .tabs a {
+        font-size: 0.9rem;
+    }
+}
+
+button{
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+
+        #09f
+
+        #0df
+
+    );
+
+border-radius: 8px;
+color: #fff;
+display: flex;
+font-size: 18px;
+padding: 4px;
+cursor: pointer;
+transition: .3s;
+}
+
+button span{
+
+    background-color: #1d1d1d;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+
+
+}
+
+button:hover span {
+
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #a00;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    padding: 10px;
+}
+.table-title {
+    background-color: #a00;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #a00;
+}
+th {
+    background-color: #900;
+    color: #fff;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
